@@ -1,0 +1,266 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5BE0290215462CA3005431BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE0290115462CA3005431BD /* UIKit.framework */; };
+		5BE0290415462CA3005431BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE0290315462CA3005431BD /* Foundation.framework */; };
+		5BE0290615462CA3005431BD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE0290515462CA3005431BD /* CoreGraphics.framework */; };
+		5BE0290C15462CA3005431BD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5BE0290A15462CA3005431BD /* InfoPlist.strings */; };
+		5BE0290E15462CA3005431BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE0290D15462CA3005431BD /* main.m */; };
+		5BE0291215462CA3005431BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE0291115462CA3005431BD /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5BE028FD15462CA3005431BD /* OpenGLES.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGLES.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BE0290115462CA3005431BD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5BE0290315462CA3005431BD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5BE0290515462CA3005431BD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5BE0290915462CA3005431BD /* OpenGLES-Info.plist */ = {isa = PBXFileReference; path = "OpenGLES-Info.plist"; sourceTree = "<group>"; };
+		5BE0290B15462CA3005431BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5BE0290D15462CA3005431BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5BE0290F15462CA3005431BD /* OpenGLES-Prefix.pch */ = {isa = PBXFileReference; path = "OpenGLES-Prefix.pch"; sourceTree = "<group>"; };
+		5BE0291015462CA3005431BD /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		5BE0291115462CA3005431BD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5BE028FA15462CA3005431BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BE0290215462CA3005431BD /* UIKit.framework in Frameworks */,
+				5BE0290415462CA3005431BD /* Foundation.framework in Frameworks */,
+				5BE0290615462CA3005431BD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5BE028F215462CA3005431BD = {
+			isa = PBXGroup;
+			children = (
+				5BE0290715462CA3005431BD /* OpenGLES */,
+				5BE0290015462CA3005431BD /* Frameworks */,
+				5BE028FE15462CA3005431BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5BE028FE15462CA3005431BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BE028FD15462CA3005431BD /* OpenGLES.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5BE0290015462CA3005431BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BE0290115462CA3005431BD /* UIKit.framework */,
+				5BE0290315462CA3005431BD /* Foundation.framework */,
+				5BE0290515462CA3005431BD /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5BE0290715462CA3005431BD /* OpenGLES */ = {
+			isa = PBXGroup;
+			children = (
+				5BE0291015462CA3005431BD /* AppDelegate.h */,
+				5BE0291115462CA3005431BD /* AppDelegate.m */,
+				5BE0290815462CA3005431BD /* Supporting Files */,
+			);
+			path = OpenGLES;
+			sourceTree = "<group>";
+		};
+		5BE0290815462CA3005431BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5BE0290915462CA3005431BD /* OpenGLES-Info.plist */,
+				5BE0290A15462CA3005431BD /* InfoPlist.strings */,
+				5BE0290D15462CA3005431BD /* main.m */,
+				5BE0290F15462CA3005431BD /* OpenGLES-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5BE028FC15462CA3005431BD /* OpenGLES */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BE0291515462CA3005431BD /* Build configuration list for PBXNativeTarget "OpenGLES" */;
+			buildPhases = (
+				5BE028F915462CA3005431BD /* Sources */,
+				5BE028FA15462CA3005431BD /* Frameworks */,
+				5BE028FB15462CA3005431BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenGLES;
+			productName = OpenGLES;
+			productReference = 5BE028FD15462CA3005431BD /* OpenGLES.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5BE028F415462CA3005431BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Otto-von-Guericke-Universität Magdeburg";
+			};
+			buildConfigurationList = 5BE028F715462CA3005431BD /* Build configuration list for PBXProject "OpenGLES" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5BE028F215462CA3005431BD;
+			productRefGroup = 5BE028FE15462CA3005431BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5BE028FC15462CA3005431BD /* OpenGLES */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5BE028FB15462CA3005431BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BE0290C15462CA3005431BD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BE028F915462CA3005431BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BE0290E15462CA3005431BD /* main.m in Sources */,
+				5BE0291215462CA3005431BD /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5BE0290A15462CA3005431BD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BE0290B15462CA3005431BD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5BE0291315462CA3005431BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		5BE0291415462CA3005431BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5BE0291615462CA3005431BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenGLES/OpenGLES-Prefix.pch";
+				INFOPLIST_FILE = "OpenGLES/OpenGLES-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5BE0291715462CA3005431BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenGLES/OpenGLES-Prefix.pch";
+				INFOPLIST_FILE = "OpenGLES/OpenGLES-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5BE028F715462CA3005431BD /* Build configuration list for PBXProject "OpenGLES" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BE0291315462CA3005431BD /* Debug */,
+				5BE0291415462CA3005431BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BE0291515462CA3005431BD /* Build configuration list for PBXNativeTarget "OpenGLES" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BE0291615462CA3005431BD /* Debug */,
+				5BE0291715462CA3005431BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5BE028F415462CA3005431BD /* Project object */;
+}
