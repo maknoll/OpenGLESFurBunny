@@ -53,6 +53,31 @@ GLint uniforms[NUM_UNIFORMS];
 @synthesize bunny = _bunny;
 @synthesize motionManager = _motionManager;
 
+
+//lazy property initializers
+- (Bunny *)bunny
+{
+  if (_bunny == nil)
+    _bunny = [[Bunny alloc] init];
+  return _bunny;
+}
+
+- (CMMotionManager *)motionManager
+{
+  if (_motionManager == nil)
+    _motionManager = [[CMMotionManager alloc] init];
+  return _motionManager;
+}
+
+- (EAGLContext *)context
+{
+  if (_context == nil) {
+    _context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
+  }
+  return _context;
+}
+
+// View and GL init stuff
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
   self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -60,13 +85,6 @@ GLint uniforms[NUM_UNIFORMS];
     // Custom initialization
   }
   return self;
-}
-
-- (Bunny *)bunny
-{
-  if (_bunny == nil)
-    _bunny = [[Bunny alloc] init];
-  return _bunny;
 }
 
 - (void)viewDidLoad
@@ -99,6 +117,30 @@ GLint uniforms[NUM_UNIFORMS];
 	return interfaceOrientation == UIInterfaceOrientationPortrait;
 }
 
+- (void) initGL {
+  
+  [EAGLContext setCurrentContext:self.context];
+  
+  self.effect = [[GLKBaseEffect alloc] init];
+  self.effect.light0.enabled = GL_TRUE;
+  self.effect.lightModelAmbientColor = (GLKVector4){0.5, 0.5, 0.5, 1.0};
+  self.effect.texture2d0.envMode = GLKTextureEnvModeModulate;
+  self.effect.texture2d0.target = GLKTextureTarget2D;
+  self.effect.texture2d0.name = self.bunny.furTexture.name;
+  self.effect.texture2d1.envMode = GLKTextureEnvModeModulate;
+  self.effect.texture2d1.target = GLKTextureTarget2D;
+  self.effect.texture2d1.name = self.bunny.noiseTexture.name;
+  [self.effect prepareToDraw];
+  float aspect = self.view.bounds.size.height / self.view.bounds.size.width;
+  _projectionMatrix = GLKMatrix4MakeOrtho(-1, 1, -aspect, aspect, -1, 1);
+  _modelViewMatrix = GLKMatrix4Identity;
+  
+  glEnable(GL_DEPTH_TEST);
+  
+  [self loadShaders];
+}
+
+// Render loop methods
 - (void)update
 {
   _attitude = self.motionManager.deviceMotion.attitude;
@@ -152,33 +194,11 @@ GLint uniforms[NUM_UNIFORMS];
   glUseProgram(0);
 }
 
-- (void) initGL {
-  
-  [EAGLContext setCurrentContext:self.context];
-  
-  self.effect = [[GLKBaseEffect alloc] init];
-  self.effect.light0.enabled = GL_TRUE;
-  self.effect.lightModelAmbientColor = (GLKVector4){0.5, 0.5, 0.5, 1.0};
-  self.effect.texture2d0.envMode = GLKTextureEnvModeModulate;
-  self.effect.texture2d0.target = GLKTextureTarget2D;
-  self.effect.texture2d0.name = self.bunny.furTexture.name;
-  self.effect.texture2d1.envMode = GLKTextureEnvModeModulate;
-  self.effect.texture2d1.target = GLKTextureTarget2D;
-  self.effect.texture2d1.name = self.bunny.noiseTexture.name;
-  [self.effect prepareToDraw];
-  float aspect = self.view.bounds.size.height / self.view.bounds.size.width;
-  _projectionMatrix = GLKMatrix4MakeOrtho(-1, 1, -aspect, aspect, -1, 1);
-  _modelViewMatrix = GLKMatrix4Identity;
-  
-  glEnable(GL_DEPTH_TEST);
-  
-  [self loadShaders];
-}
-
 - (void)glkViewControllerUpdate:(GLKViewController *)controller {
   //  NSLog(@"in glkViewControllerUpdate");
 }
 
+// paning rotates the Bunny
 - (void)pan:(UIPanGestureRecognizer *) recognizer
 {
   if ((recognizer.state == UIGestureRecognizerStateChanged) ||
@@ -193,21 +213,7 @@ GLint uniforms[NUM_UNIFORMS];
   }
 }
 
-- (CMMotionManager *)motionManager
-{
-  if (_motionManager == nil)
-    _motionManager = [[CMMotionManager alloc] init];
-  return _motionManager;
-}
-
-- (EAGLContext *)context
-{
-  if (_context == nil) {
-    _context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
-  }
-  return _context;
-}
-
+// modified Shader Loader from Xcode Template
 - (BOOL)loadShaders
 {
   GLuint vertShader, fragShader;
