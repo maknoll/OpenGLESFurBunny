@@ -127,8 +127,6 @@ GLint uniforms[NUM_UNIFORMS];
 
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect {
   
-  [self.effect prepareToDraw];
-
   glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
   
   glUseProgram(_program);
@@ -167,6 +165,7 @@ GLint uniforms[NUM_UNIFORMS];
   self.effect.texture2d1.envMode = GLKTextureEnvModeModulate;
   self.effect.texture2d1.target = GLKTextureTarget2D;
   self.effect.texture2d1.name = self.bunny.noiseTexture.name;
+  [self.effect prepareToDraw];
   float aspect = self.view.bounds.size.height / self.view.bounds.size.width;
   _projectionMatrix = GLKMatrix4MakeOrtho(-1, 1, -aspect, aspect, -1, 1);
   _modelViewMatrix = GLKMatrix4Identity;
