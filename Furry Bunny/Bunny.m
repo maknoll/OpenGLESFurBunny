@@ -1,6 +1,6 @@
 //
 //  Bunny.m
-//  OpenGLES
+//  Furry Bunn
 //
 //  Created by Martin Knoll on 17.06.12.
 //  Copyright (c) 2012 Otto-von-Guericke-Universität Magdeburg. All rights reserved.

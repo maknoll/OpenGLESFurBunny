@@ -7,51 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5B4205C3158D2082002DE76A /* fur.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5B4205BA158D1456002DE76A /* fur.fsh */; };
-		5B4205C4158D2082002DE76A /* fur.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5B4205BB158D1456002DE76A /* fur.vsh */; };
-		5B420626158D4C17002DE76A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B420625158D4C17002DE76A /* ViewController.m */; };
-		5B420629158D6E4A002DE76A /* Bunny.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B420628158D6E4A002DE76A /* Bunny.m */; };
-		5B4587EE159501EB00AD4AB9 /* zebra.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B4587ED159501EB00AD4AB9 /* zebra.png */; };
-		5B4587F0159509BB00AD4AB9 /* tiger.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B4587EF159509BB00AD4AB9 /* tiger.png */; };
-		5B81A3C7159014C8003BD393 /* fur.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B81A3C6159014C8003BD393 /* fur.png */; };
-		5BA5DCAC1593CDA600C30CD0 /* fur_noise.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BA5DCAB1593CDA600C30CD0 /* fur_noise.png */; };
-		5BC238AE1595E175003FCF8A /* FurEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC238AD1595E175003FCF8A /* FurEffect.m */; };
+		5BC238E915993225003FCF8A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC238D815993225003FCF8A /* AppDelegate.m */; };
+		5BC238EA15993225003FCF8A /* Bunny.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC238DB15993225003FCF8A /* Bunny.m */; };
+		5BC238EB15993225003FCF8A /* fur_noise.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BC238DC15993225003FCF8A /* fur_noise.png */; };
+		5BC238ED15993225003FCF8A /* fur.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BC238DE15993225003FCF8A /* fur.png */; };
+		5BC238EF15993225003FCF8A /* FurEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC238E115993225003FCF8A /* FurEffect.m */; };
+		5BC238F115993225003FCF8A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC238E415993225003FCF8A /* main.m */; };
+		5BC238F215993225003FCF8A /* tiger.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BC238E515993225003FCF8A /* tiger.png */; };
+		5BC238F315993225003FCF8A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC238E715993225003FCF8A /* ViewController.m */; };
+		5BC238F415993225003FCF8A /* zebra.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BC238E815993225003FCF8A /* zebra.png */; };
+		5BC238FD15993354003FCF8A /* fur.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5BC238DD15993225003FCF8A /* fur.fsh */; };
+		5BC238FE15993354003FCF8A /* fur.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5BC238DF15993225003FCF8A /* fur.vsh */; };
 		5BD56973158F698B00241AE7 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BD56972158F698B00241AE7 /* CoreMotion.framework */; };
 		5BE0290215462CA3005431BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE0290115462CA3005431BD /* UIKit.framework */; };
 		5BE0290415462CA3005431BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE0290315462CA3005431BD /* Foundation.framework */; };
 		5BE0290615462CA3005431BD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE0290515462CA3005431BD /* CoreGraphics.framework */; };
-		5BE0290C15462CA3005431BD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5BE0290A15462CA3005431BD /* InfoPlist.strings */; };
-		5BE0290E15462CA3005431BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE0290D15462CA3005431BD /* main.m */; };
-		5BE0291215462CA3005431BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE0291115462CA3005431BD /* AppDelegate.m */; };
 		5BE0291915462D1F005431BD /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE0291815462D1F005431BD /* GLKit.framework */; };
 		5BE0291B15462D26005431BD /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE0291A15462D26005431BD /* OpenGLES.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5B4205BA158D1456002DE76A /* fur.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = fur.fsh; sourceTree = "<group>"; };
-		5B4205BB158D1456002DE76A /* fur.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = fur.vsh; sourceTree = "<group>"; };
-		5B420624158D4C17002DE76A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5B420625158D4C17002DE76A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		5B420627158D6E4A002DE76A /* Bunny.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bunny.h; sourceTree = "<group>"; };
-		5B420628158D6E4A002DE76A /* Bunny.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bunny.m; sourceTree = "<group>"; };
-		5B4587ED159501EB00AD4AB9 /* zebra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zebra.png; sourceTree = "<group>"; };
-		5B4587EF159509BB00AD4AB9 /* tiger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tiger.png; sourceTree = "<group>"; };
-		5B81A3C3159008CB003BD393 /* bunny_blender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bunny_blender.h; sourceTree = "<group>"; };
-		5B81A3C6159014C8003BD393 /* fur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fur.png; sourceTree = "<group>"; };
-		5BA5DCAB1593CDA600C30CD0 /* fur_noise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fur_noise.png; sourceTree = "<group>"; };
-		5BC238AC1595E175003FCF8A /* FurEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FurEffect.h; sourceTree = "<group>"; };
-		5BC238AD1595E175003FCF8A /* FurEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FurEffect.m; sourceTree = "<group>"; };
+		5BC238D715993225003FCF8A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "Furry Bunny/AppDelegate.h"; sourceTree = SOURCE_ROOT; };
+		5BC238D815993225003FCF8A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "Furry Bunny/AppDelegate.m"; sourceTree = SOURCE_ROOT; };
+		5BC238D915993225003FCF8A /* bunny_blender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bunny_blender.h; path = "Furry Bunny/bunny_blender.h"; sourceTree = SOURCE_ROOT; };
+		5BC238DA15993225003FCF8A /* Bunny.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bunny.h; path = "Furry Bunny/Bunny.h"; sourceTree = SOURCE_ROOT; };
+		5BC238DB15993225003FCF8A /* Bunny.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Bunny.m; path = "Furry Bunny/Bunny.m"; sourceTree = SOURCE_ROOT; };
+		5BC238DC15993225003FCF8A /* fur_noise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fur_noise.png; path = "Furry Bunny/fur_noise.png"; sourceTree = SOURCE_ROOT; };
+		5BC238DD15993225003FCF8A /* fur.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = fur.fsh; path = "Furry Bunny/fur.fsh"; sourceTree = SOURCE_ROOT; };
+		5BC238DE15993225003FCF8A /* fur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fur.png; path = "Furry Bunny/fur.png"; sourceTree = SOURCE_ROOT; };
+		5BC238DF15993225003FCF8A /* fur.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = fur.vsh; path = "Furry Bunny/fur.vsh"; sourceTree = SOURCE_ROOT; };
+		5BC238E015993225003FCF8A /* FurEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FurEffect.h; path = "Furry Bunny/FurEffect.h"; sourceTree = SOURCE_ROOT; };
+		5BC238E115993225003FCF8A /* FurEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FurEffect.m; path = "Furry Bunny/FurEffect.m"; sourceTree = SOURCE_ROOT; };
+		5BC238E215993225003FCF8A /* Furry Bunny-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Furry Bunny-Info.plist"; path = "Furry Bunny/Furry Bunny-Info.plist"; sourceTree = SOURCE_ROOT; };
+		5BC238E315993225003FCF8A /* Furry Bunny-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Furry Bunny-Prefix.pch"; path = "Furry Bunny/Furry Bunny-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		5BC238E415993225003FCF8A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Furry Bunny/main.m"; sourceTree = SOURCE_ROOT; };
+		5BC238E515993225003FCF8A /* tiger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tiger.png; path = "Furry Bunny/tiger.png"; sourceTree = SOURCE_ROOT; };
+		5BC238E615993225003FCF8A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "Furry Bunny/ViewController.h"; sourceTree = SOURCE_ROOT; };
+		5BC238E715993225003FCF8A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "Furry Bunny/ViewController.m"; sourceTree = SOURCE_ROOT; };
+		5BC238E815993225003FCF8A /* zebra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = zebra.png; path = "Furry Bunny/zebra.png"; sourceTree = SOURCE_ROOT; };
+		5BC238F91599329D003FCF8A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "Furry Bunny/en.lproj/InfoPlist.strings"; sourceTree = SOURCE_ROOT; };
 		5BD56972158F698B00241AE7 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		5BE028FD15462CA3005431BD /* OpenGLES.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGLES.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BE028FD15462CA3005431BD /* Furry Bunny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Furry Bunny.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BE0290115462CA3005431BD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5BE0290315462CA3005431BD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5BE0290515462CA3005431BD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		5BE0290915462CA3005431BD /* OpenGLES-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenGLES-Info.plist"; sourceTree = "<group>"; };
-		5BE0290B15462CA3005431BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5BE0290D15462CA3005431BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5BE0290F15462CA3005431BD /* OpenGLES-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenGLES-Prefix.pch"; sourceTree = "<group>"; };
-		5BE0291015462CA3005431BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		5BE0291115462CA3005431BD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5BE0291815462D1F005431BD /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		5BE0291A15462D26005431BD /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -76,7 +75,7 @@
 		5BE028F215462CA3005431BD = {
 			isa = PBXGroup;
 			children = (
-				5BE0290715462CA3005431BD /* OpenGLES */,
+				5BE0290715462CA3005431BD /* Furry Bunny */,
 				5BE0290015462CA3005431BD /* Frameworks */,
 				5BE028FE15462CA3005431BD /* Products */,
 			);
@@ -85,7 +84,7 @@
 		5BE028FE15462CA3005431BD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5BE028FD15462CA3005431BD /* OpenGLES.app */,
+				5BE028FD15462CA3005431BD /* Furry Bunny.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,36 +102,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5BE0290715462CA3005431BD /* OpenGLES */ = {
+		5BE0290715462CA3005431BD /* Furry Bunny */ = {
 			isa = PBXGroup;
 			children = (
-				5B4587EF159509BB00AD4AB9 /* tiger.png */,
-				5B4587ED159501EB00AD4AB9 /* zebra.png */,
-				5BA5DCAB1593CDA600C30CD0 /* fur_noise.png */,
-				5B81A3C6159014C8003BD393 /* fur.png */,
-				5B81A3C3159008CB003BD393 /* bunny_blender.h */,
-				5B4205BA158D1456002DE76A /* fur.fsh */,
-				5B4205BB158D1456002DE76A /* fur.vsh */,
-				5B420627158D6E4A002DE76A /* Bunny.h */,
-				5B420628158D6E4A002DE76A /* Bunny.m */,
-				5BC238AC1595E175003FCF8A /* FurEffect.h */,
-				5BC238AD1595E175003FCF8A /* FurEffect.m */,
-				5B420624158D4C17002DE76A /* ViewController.h */,
-				5B420625158D4C17002DE76A /* ViewController.m */,
-				5BE0291015462CA3005431BD /* AppDelegate.h */,
-				5BE0291115462CA3005431BD /* AppDelegate.m */,
+				5BC238D715993225003FCF8A /* AppDelegate.h */,
+				5BC238D815993225003FCF8A /* AppDelegate.m */,
+				5BC238D915993225003FCF8A /* bunny_blender.h */,
+				5BC238DA15993225003FCF8A /* Bunny.h */,
+				5BC238DB15993225003FCF8A /* Bunny.m */,
+				5BC238DC15993225003FCF8A /* fur_noise.png */,
+				5BC238DD15993225003FCF8A /* fur.fsh */,
+				5BC238DE15993225003FCF8A /* fur.png */,
+				5BC238DF15993225003FCF8A /* fur.vsh */,
+				5BC238E015993225003FCF8A /* FurEffect.h */,
+				5BC238E115993225003FCF8A /* FurEffect.m */,
+				5BC238E515993225003FCF8A /* tiger.png */,
+				5BC238E615993225003FCF8A /* ViewController.h */,
+				5BC238E715993225003FCF8A /* ViewController.m */,
+				5BC238E815993225003FCF8A /* zebra.png */,
 				5BE0290815462CA3005431BD /* Supporting Files */,
 			);
+			name = "Furry Bunny";
 			path = OpenGLES;
 			sourceTree = "<group>";
 		};
 		5BE0290815462CA3005431BD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5BE0290915462CA3005431BD /* OpenGLES-Info.plist */,
-				5BE0290A15462CA3005431BD /* InfoPlist.strings */,
-				5BE0290D15462CA3005431BD /* main.m */,
-				5BE0290F15462CA3005431BD /* OpenGLES-Prefix.pch */,
+				5BC238E415993225003FCF8A /* main.m */,
+				5BC238F81599329D003FCF8A /* InfoPlist.strings */,
+				5BC238E215993225003FCF8A /* Furry Bunny-Info.plist */,
+				5BC238E315993225003FCF8A /* Furry Bunny-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -140,9 +140,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5BE028FC15462CA3005431BD /* OpenGLES */ = {
+		5BE028FC15462CA3005431BD /* Furry Bunny */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5BE0291515462CA3005431BD /* Build configuration list for PBXNativeTarget "OpenGLES" */;
+			buildConfigurationList = 5BE0291515462CA3005431BD /* Build configuration list for PBXNativeTarget "Furry Bunny" */;
 			buildPhases = (
 				5BE028F915462CA3005431BD /* Sources */,
 				5BE028FA15462CA3005431BD /* Frameworks */,
@@ -152,9 +152,9 @@
 			);
 			dependencies = (
 			);
-			name = OpenGLES;
+			name = "Furry Bunny";
 			productName = OpenGLES;
-			productReference = 5BE028FD15462CA3005431BD /* OpenGLES.app */;
+			productReference = 5BE028FD15462CA3005431BD /* Furry Bunny.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -166,7 +166,7 @@
 				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "Otto-von-Guericke-Universität Magdeburg";
 			};
-			buildConfigurationList = 5BE028F715462CA3005431BD /* Build configuration list for PBXProject "OpenGLES" */;
+			buildConfigurationList = 5BE028F715462CA3005431BD /* Build configuration list for PBXProject "Furry Bunny" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -178,7 +178,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5BE028FC15462CA3005431BD /* OpenGLES */,
+				5BE028FC15462CA3005431BD /* Furry Bunny */,
 			);
 		};
 /* End PBXProject section */
@@ -188,13 +188,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B4205C3158D2082002DE76A /* fur.fsh in Resources */,
-				5B4205C4158D2082002DE76A /* fur.vsh in Resources */,
-				5BE0290C15462CA3005431BD /* InfoPlist.strings in Resources */,
-				5B81A3C7159014C8003BD393 /* fur.png in Resources */,
-				5BA5DCAC1593CDA600C30CD0 /* fur_noise.png in Resources */,
-				5B4587EE159501EB00AD4AB9 /* zebra.png in Resources */,
-				5B4587F0159509BB00AD4AB9 /* tiger.png in Resources */,
+				5BC238FD15993354003FCF8A /* fur.fsh in Resources */,
+				5BC238FE15993354003FCF8A /* fur.vsh in Resources */,
+				5BC238EB15993225003FCF8A /* fur_noise.png in Resources */,
+				5BC238ED15993225003FCF8A /* fur.png in Resources */,
+				5BC238F215993225003FCF8A /* tiger.png in Resources */,
+				5BC238F415993225003FCF8A /* zebra.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,21 +204,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BE0290E15462CA3005431BD /* main.m in Sources */,
-				5BE0291215462CA3005431BD /* AppDelegate.m in Sources */,
-				5B420626158D4C17002DE76A /* ViewController.m in Sources */,
-				5B420629158D6E4A002DE76A /* Bunny.m in Sources */,
-				5BC238AE1595E175003FCF8A /* FurEffect.m in Sources */,
+				5BC238E915993225003FCF8A /* AppDelegate.m in Sources */,
+				5BC238EA15993225003FCF8A /* Bunny.m in Sources */,
+				5BC238EF15993225003FCF8A /* FurEffect.m in Sources */,
+				5BC238F115993225003FCF8A /* main.m in Sources */,
+				5BC238F315993225003FCF8A /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5BE0290A15462CA3005431BD /* InfoPlist.strings */ = {
+		5BC238F81599329D003FCF8A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5BE0290B15462CA3005431BD /* en */,
+				5BC238F91599329D003FCF8A /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -278,10 +277,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "OpenGLES/OpenGLES-Prefix.pch";
-				INFOPLIST_FILE = "OpenGLES/OpenGLES-Info.plist";
+				GCC_PREFIX_HEADER = "Furry Bunny/Furry Bunny-Prefix.pch";
+				INFOPLIST_FILE = "Furry Bunny/Furry Bunny-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Furry Bunny";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -291,10 +290,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "OpenGLES/OpenGLES-Prefix.pch";
-				INFOPLIST_FILE = "OpenGLES/OpenGLES-Info.plist";
+				GCC_PREFIX_HEADER = "Furry Bunny/Furry Bunny-Prefix.pch";
+				INFOPLIST_FILE = "Furry Bunny/Furry Bunny-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Furry Bunny";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -303,7 +302,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5BE028F715462CA3005431BD /* Build configuration list for PBXProject "OpenGLES" */ = {
+		5BE028F715462CA3005431BD /* Build configuration list for PBXProject "Furry Bunny" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5BE0291315462CA3005431BD /* Debug */,
@@ -312,7 +311,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5BE0291515462CA3005431BD /* Build configuration list for PBXNativeTarget "OpenGLES" */ = {
+		5BE0291515462CA3005431BD /* Build configuration list for PBXNativeTarget "Furry Bunny" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5BE0291615462CA3005431BD /* Debug */,
