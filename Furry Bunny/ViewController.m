@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "bunny.h"
+#import "SettingsViewController.h"
 
 enum
 {
@@ -48,11 +49,6 @@ GLint uniforms[NUM_UNIFORMS];
 
 
 @implementation ViewController
-@synthesize context = _context;
-@synthesize effect = _effect;
-@synthesize bunny = _bunny;
-@synthesize motionManager = _motionManager;
-
 
 //lazy property initializers
 - (Bunny *)bunny
@@ -126,7 +122,7 @@ GLint uniforms[NUM_UNIFORMS];
   self.effect.lightModelAmbientColor = (GLKVector4){0.5, 0.5, 0.5, 1.0};
   self.effect.texture2d0.envMode = GLKTextureEnvModeModulate;
   self.effect.texture2d0.target = GLKTextureTarget2D;
-  self.effect.texture2d0.name = self.bunny.furTexture.name;
+  self.effect.texture2d0.name = self.bunny.leopardTexture.name;
   self.effect.texture2d1.envMode = GLKTextureEnvModeModulate;
   self.effect.texture2d1.target = GLKTextureTarget2D;
   self.effect.texture2d1.name = self.bunny.noiseTexture.name;
@@ -211,6 +207,32 @@ GLint uniforms[NUM_UNIFORMS];
 
     _modelViewMatrix = GLKMatrix4RotateY(_modelViewMatrix, translationV.x / 200.0);
   }
+}
+
+// Fur Changer
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+  SettingsViewController * destination = segue.destinationViewController;
+  destination.sender = self;
+}
+
+- (void)setZebra
+{
+  self.effect.texture2d0.name = self.bunny.zebraTexture.name;
+  [self.effect prepareToDraw];
+}
+
+- (void)setLeopard
+{
+  self.effect.texture2d0.name = self.bunny.leopardTexture.name;
+  [self.effect prepareToDraw];
+}
+
+- (void)setTiger
+{
+  self.effect.texture2d0.name = self.bunny.tigerTexture.name;
+  [self.effect prepareToDraw];
 }
 
 // modified Shader Loader from Xcode Template

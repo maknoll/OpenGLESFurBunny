@@ -16,8 +16,6 @@
 @end
 
 @implementation Bunny
-@synthesize furTexture = _furTexture;
-@synthesize noiseTexture = _noiseTexture;
 
 - (Bunny *)init
 {
@@ -49,17 +47,43 @@
   //glDrawElements(GL_TRIANGLES, sizeof(bunnyIndices) / sizeof(GLuint), GL_UNSIGNED_INT, (void *)0);
 }
 
-- (GLKTextureInfo *)furTexture
+- (GLKTextureInfo *)leopardTexture
 {
-  if (_furTexture == nil) {
+  if (_leopardTexture == nil) {
     NSError * error;
     NSString * texturePath = [[NSBundle mainBundle] pathForResource:@"fur" ofType:@"png"];
     NSDictionary * options = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithBool:YES], GLKTextureLoaderGenerateMipmaps, [NSNumber numberWithBool:YES], GLKTextureLoaderOriginBottomLeft, nil];
                               //[NSNumber numberWithBool:YES] forKey:GLKTextureLoaderGenerateMipmaps];
-    _furTexture = [GLKTextureLoader textureWithContentsOfFile:texturePath options:options error:&error];
+    _leopardTexture = [GLKTextureLoader textureWithContentsOfFile:texturePath options:options error:&error];
     if (error) NSLog(@"%@", error);
   }
-  return _furTexture;
+  return _leopardTexture;
+}
+
+- (GLKTextureInfo *)zebraTexture
+{
+  if (_zebraTexture == nil) {
+    NSError * error;
+    NSString * texturePath = [[NSBundle mainBundle] pathForResource:@"zebra" ofType:@"png"];
+    NSDictionary * options = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithBool:YES], GLKTextureLoaderGenerateMipmaps, [NSNumber numberWithBool:YES], GLKTextureLoaderOriginBottomLeft, nil];
+    //[NSNumber numberWithBool:YES] forKey:GLKTextureLoaderGenerateMipmaps];
+    _zebraTexture = [GLKTextureLoader textureWithContentsOfFile:texturePath options:options error:&error];
+    if (error) NSLog(@"%@", error);
+  }
+  return _zebraTexture;
+}
+
+- (GLKTextureInfo *)tigerTexture
+{
+  if (_tigerTexture == nil) {
+    NSError * error;
+    NSString * texturePath = [[NSBundle mainBundle] pathForResource:@"tiger" ofType:@"png"];
+    NSDictionary * options = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithBool:YES], GLKTextureLoaderGenerateMipmaps, [NSNumber numberWithBool:YES], GLKTextureLoaderOriginBottomLeft, nil];
+    //[NSNumber numberWithBool:YES] forKey:GLKTextureLoaderGenerateMipmaps];
+    _tigerTexture = [GLKTextureLoader textureWithContentsOfFile:texturePath options:options error:&error];
+    if (error) NSLog(@"%@", error);
+  }
+  return _tigerTexture;
 }
 
 - (GLKTextureInfo *)noiseTexture

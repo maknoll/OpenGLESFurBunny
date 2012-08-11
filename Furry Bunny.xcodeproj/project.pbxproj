@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B2B448715D6C9E500AD7E41 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B2B448615D6C9E500AD7E41 /* MainStoryboard.storyboard */; };
+		5B2B448F15D6FB5200AD7E41 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2B448E15D6FB5200AD7E41 /* SettingsViewController.m */; };
 		5BC238E915993225003FCF8A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC238D815993225003FCF8A /* AppDelegate.m */; };
 		5BC238EA15993225003FCF8A /* Bunny.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC238DB15993225003FCF8A /* Bunny.m */; };
 		5BC238EB15993225003FCF8A /* fur_noise.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BC238DC15993225003FCF8A /* fur_noise.png */; };
@@ -18,6 +20,7 @@
 		5BC238F415993225003FCF8A /* zebra.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BC238E815993225003FCF8A /* zebra.png */; };
 		5BC238FD15993354003FCF8A /* fur.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5BC238DD15993225003FCF8A /* fur.fsh */; };
 		5BC238FE15993354003FCF8A /* fur.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5BC238DF15993225003FCF8A /* fur.vsh */; };
+		5BC23900159935D8003FCF8A /* bunny.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BC238FF159935D8003FCF8A /* bunny.png */; };
 		5BD56973158F698B00241AE7 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BD56972158F698B00241AE7 /* CoreMotion.framework */; };
 		5BE0290215462CA3005431BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE0290115462CA3005431BD /* UIKit.framework */; };
 		5BE0290415462CA3005431BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE0290315462CA3005431BD /* Foundation.framework */; };
@@ -27,6 +30,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B2B448615D6C9E500AD7E41 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = SOURCE_ROOT; };
+		5B2B448D15D6FB5200AD7E41 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = "Furry Bunny/SettingsViewController.h"; sourceTree = SOURCE_ROOT; };
+		5B2B448E15D6FB5200AD7E41 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsViewController.m; path = "Furry Bunny/SettingsViewController.m"; sourceTree = SOURCE_ROOT; };
 		5BC238D715993225003FCF8A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "Furry Bunny/AppDelegate.h"; sourceTree = SOURCE_ROOT; };
 		5BC238D815993225003FCF8A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "Furry Bunny/AppDelegate.m"; sourceTree = SOURCE_ROOT; };
 		5BC238D915993225003FCF8A /* bunny_blender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bunny_blender.h; path = "Furry Bunny/bunny_blender.h"; sourceTree = SOURCE_ROOT; };
@@ -46,6 +52,7 @@
 		5BC238E715993225003FCF8A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "Furry Bunny/ViewController.m"; sourceTree = SOURCE_ROOT; };
 		5BC238E815993225003FCF8A /* zebra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = zebra.png; path = "Furry Bunny/zebra.png"; sourceTree = SOURCE_ROOT; };
 		5BC238F91599329D003FCF8A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "Furry Bunny/en.lproj/InfoPlist.strings"; sourceTree = SOURCE_ROOT; };
+		5BC238FF159935D8003FCF8A /* bunny.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bunny.png; sourceTree = "<group>"; };
 		5BD56972158F698B00241AE7 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		5BE028FD15462CA3005431BD /* Furry Bunny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Furry Bunny.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BE0290115462CA3005431BD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -75,6 +82,7 @@
 		5BE028F215462CA3005431BD = {
 			isa = PBXGroup;
 			children = (
+				5BC238FF159935D8003FCF8A /* bunny.png */,
 				5BE0290715462CA3005431BD /* Furry Bunny */,
 				5BE0290015462CA3005431BD /* Frameworks */,
 				5BE028FE15462CA3005431BD /* Products */,
@@ -119,6 +127,9 @@
 				5BC238E515993225003FCF8A /* tiger.png */,
 				5BC238E615993225003FCF8A /* ViewController.h */,
 				5BC238E715993225003FCF8A /* ViewController.m */,
+				5B2B448615D6C9E500AD7E41 /* MainStoryboard.storyboard */,
+				5B2B448D15D6FB5200AD7E41 /* SettingsViewController.h */,
+				5B2B448E15D6FB5200AD7E41 /* SettingsViewController.m */,
 				5BC238E815993225003FCF8A /* zebra.png */,
 				5BE0290815462CA3005431BD /* Supporting Files */,
 			);
@@ -194,6 +205,8 @@
 				5BC238ED15993225003FCF8A /* fur.png in Resources */,
 				5BC238F215993225003FCF8A /* tiger.png in Resources */,
 				5BC238F415993225003FCF8A /* zebra.png in Resources */,
+				5BC23900159935D8003FCF8A /* bunny.png in Resources */,
+				5B2B448715D6C9E500AD7E41 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +222,7 @@
 				5BC238EF15993225003FCF8A /* FurEffect.m in Sources */,
 				5BC238F115993225003FCF8A /* main.m in Sources */,
 				5BC238F315993225003FCF8A /* ViewController.m in Sources */,
+				5B2B448F15D6FB5200AD7E41 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

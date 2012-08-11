@@ -11,5 +11,7 @@
 #import <CoreMotion/CoreMotion.h>
 
 @interface ViewController : GLKViewController <GLKViewDelegate>
-
+- (void)setZebra;
+- (void)setLeopard;
+- (void)setTiger;
 @end

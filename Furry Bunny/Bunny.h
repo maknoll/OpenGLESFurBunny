@@ -12,6 +12,8 @@
 @interface Bunny : NSObject
 - (void)draw;
 - (void)prepare;
-@property (strong, nonatomic) GLKTextureInfo * furTexture;
+@property (strong, nonatomic) GLKTextureInfo * leopardTexture;
+@property (strong, nonatomic) GLKTextureInfo * zebraTexture;
+@property (strong, nonatomic) GLKTextureInfo * tigerTexture;
 @property (strong, nonatomic) GLKTextureInfo * noiseTexture;
 @end
