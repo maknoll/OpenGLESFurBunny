@@ -14,4 +14,6 @@
 - (void)setZebra;
 - (void)setLeopard;
 - (void)setTiger;
+- (void)changeShellsTo:(NSInteger)number;
+- (void)changeFurLengthTo:(float)value;
 @end

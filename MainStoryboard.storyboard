@@ -95,10 +95,41 @@
                                     <action selector="setTiger:" destination="0RH-8X-aLD" eventType="touchUpInside" id="iHE-nu-XjY"/>
                                 </connections>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="8" minValue="0.0" maxValue="20" id="YAg-CU-YD5">
+                                <rect key="frame" x="12" y="184" width="174" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="changeShells:" destination="0RH-8X-aLD" eventType="valueChanged" id="q9g-EO-ha4"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="8 Shells" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="tFH-yP-8p6">
+                                <rect key="frame" x="20" y="155" width="164" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Fur-Length" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="yVU-TV-IPP">
+                                <rect key="frame" x="14" y="214" width="170" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.040000000000000001" minValue="0.0" maxValue="0.10000000000000001" id="Qj1-ad-S8j">
+                                <rect key="frame" x="12" y="243" width="174" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="changeFurLength:" destination="0RH-8X-aLD" eventType="valueChanged" id="yXq-F9-F4h"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <value key="contentSizeForViewInPopover" type="size" width="200" height="200"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="200" height="300"/>
+                    <connections>
+                        <outlet property="shells" destination="tFH-yP-8p6" id="JRh-DH-Hxw"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1010" y="-126"/>
@@ -108,9 +139,12 @@
         <class className="SettingsViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsViewController.h"/>
             <relationships>
+                <relationship kind="action" name="changeFurLength:" candidateClass="UISlider"/>
+                <relationship kind="action" name="changeShells:" candidateClass="UISlider"/>
                 <relationship kind="action" name="setLeopard:"/>
                 <relationship kind="action" name="setTiger:"/>
                 <relationship kind="action" name="setZebra:"/>
+                <relationship kind="outlet" name="shells" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="ViewController" superclassName="GLKViewController">

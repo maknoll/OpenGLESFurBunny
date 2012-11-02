@@ -35,6 +35,8 @@ GLint uniforms[NUM_UNIFORMS];
   GLuint _vertexArray;
   GLuint _vertexBuffer;
   CMAttitude * _attitude;
+  NSInteger shells;
+  float furLength;
 }
 @property (strong, nonatomic) EAGLContext *context;
 @property (strong, nonatomic) GLKBaseEffect *effect;
@@ -117,6 +119,8 @@ GLint uniforms[NUM_UNIFORMS];
   
   [EAGLContext setCurrentContext:self.context];
   
+  shells = 8;
+  furLength = 0.04;
   self.effect = [[GLKBaseEffect alloc] init];
   self.effect.light0.enabled = GL_TRUE;
   self.effect.lightModelAmbientColor = (GLKVector4){0.5, 0.5, 0.5, 1.0};
@@ -179,11 +183,10 @@ GLint uniforms[NUM_UNIFORMS];
   [self.bunny draw];
   glEnable(GL_BLEND);
 	glBlendFunc (GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-# define STEPS 8
-  for (int i = 1; i <= STEPS; i++) {
-    float shadow = 1.1 - (STEPS - i) * 0.05;
+  for (int i = 1; i <= shells; i++) {
+    float shadow = 1.1 - (shells - i) * 0.05;
     glUniform4f(uniforms[UNIFORM_DIFFUSE], shadow, shadow, shadow, 1);
-    glUniform1f(uniforms[UNIFORM_HEIGHT], (GLfloat)i * (0.04 / STEPS));
+    glUniform1f(uniforms[UNIFORM_HEIGHT], (GLfloat)i * (furLength / shells));
     [self.bunny draw];
   }
   glDisable(GL_BLEND);
@@ -233,6 +236,16 @@ GLint uniforms[NUM_UNIFORMS];
 {
   self.effect.texture2d0.name = self.bunny.tigerTexture.name;
   [self.effect prepareToDraw];
+}
+
+- (void)changeShellsTo:(NSInteger)number
+{
+  shells = number;
+}
+
+- (void)changeFurLengthTo:(float)value
+{
+  furLength = value;
 }
 
 // modified Shader Loader from Xcode Template

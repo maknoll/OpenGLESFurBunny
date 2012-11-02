@@ -30,6 +30,7 @@
 
 - (void)viewDidUnload
 {
+  [self setShells:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -49,5 +50,14 @@
 
 - (IBAction)setTiger:(id)sender {
   [self.sender setTiger];
+}
+
+- (IBAction)changeShells:(UISlider *)sender {
+  self.shells.text = [NSString stringWithFormat:@"%d Shells", (NSInteger)sender.value];
+  [self.sender changeShellsTo:(NSInteger)sender.value];
+}
+
+- (IBAction)changeFurLength:(UISlider *)sender {
+  [self.sender changeFurLengthTo:sender.value];
 }
 @end

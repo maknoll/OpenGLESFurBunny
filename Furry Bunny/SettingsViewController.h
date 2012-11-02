@@ -10,9 +10,12 @@
 #import "ViewController.h"
 
 @interface SettingsViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *shells;
 @property (weak, nonatomic) ViewController * sender;
 - (IBAction)setZebra:(id)sender;
 - (IBAction)setLeopard:(id)sender;
 - (IBAction)setTiger:(id)sender;
+- (IBAction)changeShells:(UISlider *)sender;
+- (IBAction)changeFurLength:(UISlider *)sender;
 
 @end
